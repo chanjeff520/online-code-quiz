@@ -28,19 +28,27 @@ h2{
 
 section{
     border: 4px dashed navy;
+    margin: 40px auto 0 auto;
     justify-content: center;
     height:300px;
     width:600px;
     border-radius: 20px;
+
 }
 
 button{
     cursor: pointer;
     margin-bottom:10px;
     width: 200px;
-
 }
 
+.go-back{
+    position:relative;
+    top:45px;
+    left:200px;
+}
+
+/* For the menu */
 #section-menu div{
     margin-top:40px;
     display:flex;
@@ -51,5 +59,65 @@ button{
 }
 
 #section-menu{
-    
+    display: block;
+}
+
+
+/* For the instruction menu */
+#section-instr{
+    display:none;
+}
+
+#section-instr ol{
+    margin: 30px 0 30px 30px;
+    list-style: decimal;
+    font-size: 20px;
+}
+
+#section-instr ol li{
+    margin-bottom: 10px;
+}
+
+/* .go-back{
+    position:relative;
+    top:45px;
+    left:200px;
+} */
+
+
+/* for the quiz area */
+#section-quiz{
+    display:none;
+}
+
+p{
+    margin: 20px 0 2px 20px;
+    font-size: 20px;
+}
+
+#section-time{
+    margin: 0 auto 0 auto;
+}
+
+#section-quiz div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-quiz ol{
+    margin: 30px 0 30px 30px;
+    list-style: decimal;
+    font-size: 20px;
+}
+
+#section-quiz ol li{
+    margin-bottom: 10px;
+}
+
+#section-quiz ol li button{
+    font-size: 16px;
+    width: 300px;
+    background-color: lightseagreen;
+    border-radius: 5px;
 }
