@@ -1,5 +1,6 @@
 *{
-
+    box-sizing: border-box;
+    
 }
 
 header{
@@ -9,7 +10,13 @@ header{
 
 h1{
     background-color: aquamarine;
-    font-size: 300%;
+    font-size: 250%;
     height: 66px;
+}
+
+h2{
+    background-color: pink;
+    font-size: 200%;
+    text-align: center;
 }
 

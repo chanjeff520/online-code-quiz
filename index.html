@@ -14,7 +14,7 @@
     </header>
 
     <!-- for the main menu -->
-    <section>
+    <section id="section-menu">
         <h2>Main Menu</h2>
         <ul>
             <li><button> Start Quiz </button></li>
@@ -24,20 +24,27 @@
     </section>
 
     <!-- For the instruction -->
-
-    <section>
-        <h2>Main Menu</h2>
+    <section id="section-instr">
+        <h2>Instructions</h2>
         <ol>
             <li> You have 60 seconds to complete this quiz. </li>
             <li> All of the question answered wrong will detract from 5 seconds from you time.</li>
             <li> Your score will be The amount of time you have left.</li>
         </ol>
-        <button> Main menu </button>
+        <button class="go-back"> Main menu </button>
     </section>
 
+    <!-- For the Highscores -->
+    <section id="section-highscore"> 
+        <h2> HighScores </h2>
+        <ol>
 
-    <!-- for quiz box -->
-    <section>
+        </ol>
+        <button class="go-back"> Main menu</button>
+    </section>
+
+    <!-- For quiz -->
+    <section id="section-quiz">
         <p></p>
         <ol>
             <li></li>
@@ -46,8 +53,16 @@
             <li></li>
         </ol>
         <div>
-            Timer: <span id="section-timer">60</span>
+            Timer: <span id="section-timer">61</span>
         </div>
+    </section>
+
+    <!-- comes after the Quiz -->
+    <section id="section-results">
+        <h2>Results</h2>
+        <p>Your Score: <span>0</span></p>
+        <label>Enter your initials</label>
+        <input id="initials">
     </section>
 
     
