@@ -65,7 +65,7 @@ button{
 
 /* For the instruction menu */
 #section-instr{
-    display:none;
+    display:block;
 }
 
 #section-instr ol{
@@ -87,7 +87,7 @@ button{
 
 /* for the quiz area */
 #section-quiz{
-    display:none;
+    display:block;
 }
 
 p{
@@ -125,13 +125,13 @@ p{
 
 /* for results*/
 #section-results {
-    display:none;
+    display:block;
 }
 
 
 /*for highscore */
 #section-highscore{
-    display:none;
+    display:block;
 }
 
 #section-highscore ol{
