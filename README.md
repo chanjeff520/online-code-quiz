@@ -11,10 +11,10 @@
  - GitHub : hosts the repository that can be deployed to GitHub Pages
 
 ## Site Picture
-![Site](./assets/images/Jeff%20Chan's%20Profolio.gif)
+![Site](./assets/Code_Quiz.gif)
 
 ## Deployed Link
-https://chanjeff520.github.io/Profolio-Webpage/
+https://chanjeff520.github.io/online-code-quiz/
 
 ## Instructions
 <ol>
@@ -25,7 +25,7 @@ https://chanjeff520.github.io/Profolio-Webpage/
 
 
 ## Code Snippet
-```html
+```js
 
 //This function is use to change questions from the quiz page and also remove the prevous questions.
 function renderQuiz(){
