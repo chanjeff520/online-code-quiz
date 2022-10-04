@@ -18,8 +18,8 @@
         <h2>Main Menu</h2>
         <div>
             <button id="start-quiz"> Start Quiz </button>
-            <button> Instructions </button>
-            <button> Highscores </button>
+            <button id="go-instr"> Instructions </button>
+            <button id="go-highscores"> Highscores </button>
         </div>
     </section>
 
@@ -31,27 +31,23 @@
             <li> All of the question answered wrong will detract from 5 seconds from you time.</li>
             <li> Your score will be The amount of time you have left.</li>
         </ol>
-        <button class="go-back"> Main menu </button>
+        <button class= "go-back" id="go-back1"> Main Menu </button>
     </section>
 
     <!-- For the Highscores -->
     <section id="section-highscore"> 
-        <h2> HighScores </h2>
-        <ol>
-            <li id="first-place"> j</li>
-            <li id="second-place"> j</li>
-            <li id="third-place"> j</li>
-            <li id="forth-place"> j</li>
-            <li id="fifth-place"> j</li>
+        <h2> Scores </h2>
+        <ol id="scores1">
+            
         </ol> <br>
-        <button class="go-back"> Main menu </button>
+        <button class= "go-back" id="go-back2"> Main Menu </button>
     </section>
 
     <!-- For quiz -->
     <section id="section-quiz">
         <p id="questions"> </p>
         <div>
-            <p>Timer: <span id="section-timer">61</span></p>
+            <p>Timer: <span id="section-timer">60</span></p>
         </div>
         <ol id="choices">
 
@@ -62,10 +58,10 @@
     <!-- comes after the Quiz -->
     <section id="section-results">
         <h2>Results</h2>
-        <p>Your Score: <span>0</span></p>
+        <p>Your Score: <span id="score-results">0</span></p>
         <label>Enter your initials</label>
         <input id="initials"> <br>
-        <button class="go-back"> Main menu</button>
+        <button class= "go-back" id="go-back3"> Main Menu</button>
     </section>
 
     
