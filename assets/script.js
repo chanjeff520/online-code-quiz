@@ -39,7 +39,7 @@ var quiz = [
 
 ]
 
-var highscoreList;
+var highscoreList = [["__", 0],["__", 0],["__", 0],["__", 0],["__", 0]];
 
 //functions needed
 function showMenu(){
@@ -155,18 +155,20 @@ function renderQuiz(){
 
 function renderScores(){
     var olEl = document.getElementById("score1");
-    highscoreList = JSON.parse(localStorage.getItem("score"))
+    //gets highscoreList from the localStorage
+    highscoreList = JSON.parse(localStorage.getItem("score"));
+    //checks if highscoreList is null if it is it will create a list of empty list
     if(highscoreList == null){
         console.log("here");
         highscoreList=[["__", 0],["__", 0],["__", 0],["__", 0],["__", 0]]
         console.log(highscoreList)
     }
+    //prints the array
     for(var i = 0; i<highscoreList.length; i++){
         console.log(highscoreList[i][0] + highscoreList[i][1]);
         var liEl = document.createElement("li");
-        var pEl = document.createElement("p");
-        pEl.textContent = highscoreList[i][0] +" : "+ highscoreList[i][1];
-        liEl.appendChild(pEl)
+        liEl.textContent = highscoreList[i][0] +" : "+ highscoreList[i][1]
+        console.log(liEl)
         olEl.appendChild(liEl);
     }
 
