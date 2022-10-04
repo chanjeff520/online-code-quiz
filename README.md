@@ -11,7 +11,7 @@
  - GitHub : hosts the repository that can be deployed to GitHub Pages
 
 ## Site Picture
-![Site](./assets/Code_Quiz.gif)
+![Site](./assets/code-quiz.gif)
 
 ## Deployed Link
 https://chanjeff520.github.io/online-code-quiz/

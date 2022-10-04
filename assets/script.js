@@ -65,9 +65,14 @@ function showHighscore(){
     document.getElementById("section-instr").style.display = "none";
     document.getElementById("section-highscore").style.display = "block";
     document.getElementById("section-quiz").style.display = "none";
-    document.getElementById("section-results").style.display = "none";
+    document.getElementById("section-results").style.display = "none";4
 
+    var olEl = document.getElementById("scores1");
+    while (olEl.firstChild){
+        olEl.removeChild(olEl.lastChild);
+    }
     renderScores();
+    
 }
 function showQuiz(){
     document.getElementById("section-menu").style.display = "none";
@@ -154,7 +159,7 @@ function renderQuiz(){
 }
 
 function renderScores(){
-    var olEl = document.getElementById("score1");
+    var olEl = document.getElementById("scores1");
     //gets highscoreList from the localStorage
     highscoreList = JSON.parse(localStorage.getItem("score"));
     //checks if highscoreList is null if it is it will create a list of empty list
@@ -165,13 +170,27 @@ function renderScores(){
     }
     //prints the array
     for(var i = 0; i<highscoreList.length; i++){
-        console.log(highscoreList[i][0] + highscoreList[i][1]);
         var liEl = document.createElement("li");
         liEl.textContent = highscoreList[i][0] +" : "+ highscoreList[i][1]
-        console.log(liEl)
         olEl.appendChild(liEl);
     }
 
+}
+
+function saveScores(){
+    var labelEl = document.getElementById("initials");
+    if(labelEl.value == null) return;
+    for(var i = 0; i < highscoreList.length; i++){
+        if(labelEl == null){
+            return;
+        }else if(highscoreList[i][0] == "__"){
+            highscoreList[i][0] = labelEl.value;
+            highscoreList[i][1] = seconds;
+            localStorage.setItem("score", JSON.stringify(highscoreList));
+            return;
+        }
+    }
+    alert("Sorry All Score Slots are used.")
 }
 
 //when the user click the start, the time begins
@@ -184,7 +203,7 @@ function startQuiz(){
 // Start the Quiz
 startQuizEl.addEventListener("click", startQuiz);
 
-//document.getElementById("initials").addEventListener("submit",);
+document.getElementById("Saving").addEventListener("click", saveScores);
 
 //geting to different pages
 document.getElementById("go-back1").addEventListener("click", showMenu)
